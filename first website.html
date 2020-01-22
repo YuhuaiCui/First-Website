@@ -2,16 +2,37 @@
 <head> <!-- Contains things for your web browser to think about -->
 	<title>First Website</title>
 	<style>
+	a:link {
+		color:red;
+	}
+	
+	a:visited {
+		color: scarlet;
+	}
+	
+	a:active {
+		color: white;
+	}
+	
+	a:hover {
+		background-color: red;
+		color: black;
+	}
+	
 	body {
 		background-color: black;
 		font-family: Trebuchet MS;
 		color: lavender;
 		font-size: 16pt;
+		background-image: url('blob.gif');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 	
 	div {
 		width: 800px;
-		border: 3px solid purple;
+		border: 10px solid purple;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
@@ -25,10 +46,27 @@
 	
 	h1 {	
 		font-size: 100pt;
+		text-align: center;
+	}
+	
+	h1:hover {
+		color: green;
 	}
 	
 	h2 {
 		font-size: 30pt;
+	}
+	
+	img {
+		float: left;
+		margin-right: 20px;
+		margin-bottem: 10px;
+		border: 5px solid green;
+	}
+	
+	p, li {
+		text-align: justify;
+		line-height: 1.5em;
 	}
 	</style>
 </head>
@@ -38,10 +76,13 @@
 <div>
 <h1>Daniel</h1>
 
+<img src="meme.jpg" width="300px">
+
 <p>Hello, I am Daniel, during my spare time other than gaming, I like to read or play around with photoshop and code.</p>
 
 <p>I love Apex Legends, because it is an amazing first person shooter with fantastic movement mechanics. Totally not because I am in the top 8000s in the ranked league.</p>
 
+<br>
 <h2>Things I Like:</h2>
 <ol>
   <li>Apex Legends</li>
@@ -60,7 +101,6 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<img src="meme.jpg"> </img>
 
 </div>
 </body>
